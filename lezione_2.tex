@@ -1,0 +1,80 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{multicol}
+\usepackage{qrcode}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\usetheme{Antibes}
+\setbeamertemplate{footline}[frame number]{}
+
+\newcommand{\makemycolor}[2]{%
+    \pgfmathsetmacro{\hue}{(#1/100)^1.715*0.79}%
+    \definecolor{myhsbcolor}{hsb}{\hue,1,1}%
+    \textcolor{myhsbcolor}{#2}%
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={La Blockchain},
+    %pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\title{La Blockchain} 
+\author{Valerio Vaccaro}
+\newdate{date}{29}{02}{2024}
+\date{\displaydate{date}}
+\logo{}
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+    \begin{center}
+        \includegraphics[height=1cm]{logo.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+    \tableofcontents
+\end{frame}
+
+\begin{frame}{Meme}
+    \begin{center}
+        \includegraphics[height=5cm]{missing.jpg}
+    \end{center}
+    * entro la fine del corso capirete tutti i meme.
+\end{frame}
+
+\begin{frame}{Riassunto}
+    
+\end{frame}
+
+\section{Struttura del Blocco}
+
+\section{Genesis Block: analisi approfondita e particolarità}
+
+\section{Le Blockchain di test di Bitcoin}
+
+\include{bibliografia}
+\include{risorse}
+
+\begin{frame}{Domande} 
+    \begin{center}
+        \includegraphics[height=5cm]{domande.jpg}
+    \end{center}
+\end{frame}
+
+\begin{frame}[plain]
+    \begin{center}
+        \includegraphics[height=8cm]{fine.jpg}
+    \end{center}
+\end{frame}
+
+\end{document}
